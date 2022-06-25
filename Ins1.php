@@ -28,8 +28,16 @@
 #***************************************************************************************
 include '../functions/ParamLibFnc.php';
 require_once("../functions/PragRepFnc.php");
+function consoleLog($msg) {
+		echo '<script type="text/javascript">' .
+          'console.log(' . $msg . ');</script>';
+	}
+
+consoleLog('Hello, console!');
 error_reporting(1);
+consoleLog('Session start oncesi');
 session_start();
+consoleLog('Session start sonrasi');
 
 $_SESSION['username'] = $_POST["addusername"];
 $_SESSION['password'] = $_POST["addpassword"];

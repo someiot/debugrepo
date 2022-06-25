@@ -28,7 +28,7 @@
 #***************************************************************************************
 include '../functions/ParamLibFnc.php';
 require_once("../functions/PragRepFnc.php");
-error_reporting(0);
+error_reporting(1);
 session_start();
 
 $_SESSION['username'] = $_POST["addusername"];
